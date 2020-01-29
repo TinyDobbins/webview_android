@@ -47,8 +47,7 @@ function init(self)
 	else
 		local webview_id = webview.create(webview_callback)
 
-		local feedback_html = sys.load_resource("file:///android_asset/www/index.html")
-		webview.open_raw(webview_id, feedback_html)
+		webview.open(webview_id, "file:///android_asset/www/index.html")
 
 		webview.set_position(webview_id, 0, 0, -1, -1)
 		
